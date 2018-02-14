@@ -1,5 +1,8 @@
 # Heap sort
 
+## Description
++ Do not use A[0]
+
 ## Pseudo code
 
 ### Max heapify
@@ -23,7 +26,7 @@ MAX_HEAPIFY(A, i)
 
 ```cpp
 BUILD_MAX_HEAP(A)
-    for i = A.size/2 downto 1
+    for i = ⌊A.size/2⌋ downto 1
         MAX_HEAPIFY(A, i)
 ```
 
