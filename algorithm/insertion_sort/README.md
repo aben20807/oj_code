@@ -1,5 +1,8 @@
 # Insertion sort
 
+## Stability
++ stable
+
 ## Pseudo code
 
 ### Insertion sort

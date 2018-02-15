@@ -1,7 +1,7 @@
 # Quick sort
 
-## Description
-+ Do not use A[0]
+## Stability
++ unstable (Typical)
 
 ## Pseudo code
 

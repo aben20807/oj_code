@@ -1,5 +1,8 @@
 # Bubble sort
 
+## Stability
++ stable
+
 ## Pseudo code
 
 ### Bubble sort

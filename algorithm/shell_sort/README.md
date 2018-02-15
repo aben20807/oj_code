@@ -4,7 +4,7 @@
 + Shell sort is a generalization of insertion sort.
 + Use A108870 integer sequence to reduce worst-case time complexity.
 
-### Stability
+## Stability
 + unstable
 
 ## Pseudo code
