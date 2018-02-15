@@ -4,16 +4,19 @@
 #include <vector>
 using namespace std;
 
-void print_vector(vector<int> a)
+template <class T>
+void print_vector(vector<T> a)
 {
-    vector<int>::iterator iter;
+    typename vector<T>::iterator iter;
     for (iter = a.begin(); iter != a.end(); iter++) {
-        printf("%d ", *iter);
+        printf("%s", (iter == a.begin())? "": " ");
+        cout << *iter;
     }
     printf("\n");
 }
 
-int partation(vector<int> *A, int p, int r)
+template <class T>
+int partation(vector<T> *A, int p, int r)
 {
     int x = (*A)[r];
     int i = p - 1;
@@ -27,7 +30,8 @@ int partation(vector<int> *A, int p, int r)
     return i + 1;
 }
 
-void quick_sort(vector<int> *A, int p, int r)
+template <class T>
+void quick_sort(vector<T> *A, int p, int r)
 {
     if (p < r){
         int q = partation(A, p, r);

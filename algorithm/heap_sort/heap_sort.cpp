@@ -4,11 +4,13 @@
 #include <vector>
 using namespace std;
 
-void print_vector(vector<int> a)
+template <class T>
+void print_vector(vector<T> a)
 {
-    vector<int>::iterator iter;
+    typename vector<T>::iterator iter;
     for (iter = a.begin(); iter != a.end(); iter++) {
-        printf("%d ", *iter);
+        printf("%s", (iter == a.begin())? "": " ");
+        cout << *iter;
     }
     printf("\n");
 }
@@ -23,7 +25,8 @@ int get_right(int i)
     return 2 * i + 1;
 }
 
-void max_heapify(vector<int> *A, int i)
+template <class T>
+void max_heapify(vector<T> *A, int i)
 {
     int l = get_left(i);
     int r = get_right(i);
@@ -40,7 +43,8 @@ void max_heapify(vector<int> *A, int i)
     }
 }
 
-void heap_sort(vector<int> *A)
+template <class T>
+void heap_sort(vector<T> *A)
 {
     /* Build max heap */
     for (int i = (*A).size() - 1 / 2; i >= 1; i--) {

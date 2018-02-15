@@ -5,26 +5,29 @@
 #include <climits>
 using namespace std;
 
-void print_vector(vector<int> a)
+template <class T>
+void print_vector(vector<T> a)
 {
-    vector<int>::iterator iter;
+    typename vector<T>::iterator iter;
     for (iter = a.begin(); iter != a.end(); iter++) {
-        printf("%d ", *iter);
+        printf("%s", (iter == a.begin()) ? "" : " ");
+        cout << *iter;
     }
     printf("\n");
 }
 
-void merge(vector<int> *A, int p, int q, int r)
+template <class T>
+void merge(vector<T> *A, int p, int q, int r)
 {
     int n1 = q - p + 1;
     int n2 = r - q;
-    vector<int> L(n1 + 2);
-    vector<int> R(n2 + 2);
+    vector<T> L(n1 + 2);
+    vector<T> R(n2 + 2);
     for (int i = 1; i <= n1; i++)
         L[i] = (*A)[p + i - 1];
     for (int i = 1; i <= n2; i++)
         R[i] = (*A)[q + i];
-    L[n1 + 1] = INT_MAX;
+    L[n1 + 1] = INT_MAX; // TODO support template
     R[n2 + 1] = INT_MAX;
     int i = 1;
     int j = 1;
@@ -36,7 +39,8 @@ void merge(vector<int> *A, int p, int q, int r)
     }
 }
 
-void merge_sort(vector<int> *A, int p, int r)
+template <class T>
+void merge_sort(vector<T> *A, int p, int r)
 {
     if (p < r) {
         int q = (p + r) / 2;

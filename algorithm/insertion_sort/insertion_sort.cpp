@@ -4,25 +4,27 @@
 #include <vector>
 using namespace std;
 
-void print_vector(vector<int> a)
+template <class T>
+void print_vector(vector<T> a)
 {
-    vector<int>::iterator iter;
+    typename vector<T>::iterator iter;
     for (iter = a.begin(); iter != a.end(); iter++) {
         printf("%d ", *iter);
     }
     printf("\n");
 }
 
-void insertion_sort(vector<int> *A)
+template <class T>
+void insertion_sort(vector<T> *A)
 {
-    for(int i = 2; i < (*A).size(); i++){
+    for (int i = 2; i < (*A).size(); i++) {
         int key = (*A)[i];
         int j = i - 1;
-        while(j > 0 && (*A)[j] > key){
-            (*A)[j+1] = (*A)[j];
+        while (j > 0 && (*A)[j] > key) {
+            (*A)[j + 1] = (*A)[j];
             j--;
         }
-        (*A)[j+1] = key;
+        (*A)[j + 1] = key;
     }
 }
 
