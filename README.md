@@ -13,3 +13,6 @@ Practice in Online Judge
 + 10327\_Flip\_Sort: Bubble Sort
 + 10810\_Ultra-QuickSort: Merge Sort
 + 10107\_What\_is\_the\_Median: Insertion Sort
+
+### STL
++ 10420\_List\_of\_Conquests: Map
