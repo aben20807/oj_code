@@ -19,23 +19,25 @@ void print_vector(vector<T> a)
 template <class T>
 void merge(vector<T> *A, int p, int q, int r)
 {
-    int n1 = q - p + 1;
-    int n2 = r - q;
-    vector<T> L(n1 + 2);
-    vector<T> R(n2 + 2);
-    for (int i = 1; i <= n1; i++)
-        L[i] = (*A)[p + i - 1];
-    for (int i = 1; i <= n2; i++)
-        R[i] = (*A)[q + i];
-    L[n1 + 1] = INT_MAX; // TODO support template
-    R[n2 + 1] = INT_MAX;
-    int i = 1;
-    int j = 1;
-    for (int k = p; k <= r; k++) {
-        if (L[i] <= R[j])
-            (*A)[k] = L[i++];
+    typename vector<T>::const_iterator start = (*A).begin() + p;
+    typename vector<T>::const_iterator mid = (*A).begin() + q + 1;
+    typename vector<T>::const_iterator end = (*A).begin() + r + 1;
+    vector<T> L(start, mid);
+    vector<T> R(mid, end);
+    int lcnt = 0;
+    int rcnt = 0;
+    int acnt = p;
+    while (lcnt < (int)L.size() && rcnt < (int)R.size()) {
+        if (L[lcnt] <= R[rcnt])
+            (*A)[acnt++] = L[lcnt++];
         else
-            (*A)[k] = R[j++];
+            (*A)[acnt++] = R[rcnt++];
+    }
+    while (lcnt < (int)L.size()) {
+        (*A)[acnt++] = L[lcnt++];
+    }
+    while (rcnt < (int)R.size()) {
+        (*A)[acnt++] = R[rcnt++];
     }
 }
 
@@ -52,9 +54,9 @@ void merge_sort(vector<T> *A, int p, int r)
 
 int main()
 {
-    vector<int> a({-1, 16, 4, 10, 14, 7, 9, 3, 2, 8, 1});
+    vector<int> a({11, 16, 4, 10, 14, 7, 9, 3, 2, 8, 1});
     print_vector(a);
-    merge_sort(&a, 1, a.size() - 1);
+    merge_sort(&a, 0, (int)a.size() - 1);
     print_vector(a);
     return 0;
 }

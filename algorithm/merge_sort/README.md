@@ -1,7 +1,6 @@
 # Merge sort
 
 ## Description
-+ Do not use A[0]
 
 ## Stability
 + stable
@@ -12,24 +11,20 @@
 
 ```cpp
 MERGE(A, p, q, r)
-    n1 = q - p + 1
-    n2 = r - q
-    new two arrays: L[1..n1+1], R[1..n2+1]
-    for i = 1 to n1
-        L[i] = A[p + i - 1]
-    for i = 1 to n2
-        R[i] = A[q + i]
-    L[n1+1] = INFINITY
-    R[n2+1] = INFINITY
-    i = 1
-    j = 1
-    for k = p to r
+    copy A[p..q] to L[]
+    copy A[q+1..r] to R[]
+    i = 0
+    j = 0
+    k = p
+    while i < L.size && j < R.size
         if L[i] <= R[j]
-            A[k] = L[i]
-            i += 1
+            A[k++] = L[i++]
         else
-            A[k] = R[j]
-            j += 1
+            A[k++] = R[j++]
+    while i < L.size
+        A[k++] = L[i++]
+    while j < R.size
+        A[k++] = R[i++]
 ```
 
 ### Merge sort
