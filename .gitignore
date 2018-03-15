@@ -1,2 +1,5 @@
 *.orig
+*.stackdump
+*.in
+*.out
 .gdb_history
