@@ -2,4 +2,5 @@
 *.stackdump
 *.in
 *.out
+*.swp
 .gdb_history
