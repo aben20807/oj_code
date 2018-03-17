@@ -3,4 +3,5 @@
 *.in
 *.out
 *.swp
+*.exe
 .gdb_history
