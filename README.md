@@ -31,6 +31,7 @@ Practice in Online Judge
 + 532\_Dungeon\_Master
 + 439\_Knight\_Moves
 + 383\_Shipping\_Routes
++ 567\_Risk
 
 ### Prime factor
 + 10392\_Factoring\_Large\_Numbers
