@@ -15,5 +15,29 @@ Practice in Online Judge
 + 10810\_Ultra-QuickSort: Merge Sort
 + 10107\_What\_is\_the\_Median: Insertion Sort
 
+### Union
++ 10685\_Nature
++ 10583\_Ubiquitous\_Religions
+
 ### STL
 + 10420\_List\_of\_Conquests: Map
+
+### DFS
++ 539\_The\_Settlers\_of\_Catan
++ 352\_The\_Seasonal\_War
++ 260\_Il\_Gioco\_dellX
+
+### BFS
++ 532\_Dungeon\_Master
++ 439\_Knight\_Moves
++ 383\_Shipping\_Routes
+
+### Prime factor
++ 10392\_Factoring\_Large\_Numbers
+
+### GCD
++ 408\_Uniform\_Generator
++ 10104\_Euclid\_Problem
+
+### Big number
++ 10106\_Product
