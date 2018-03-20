@@ -26,6 +26,7 @@ Practice in Online Judge
 + 539\_The\_Settlers\_of\_Catan
 + 352\_The\_Seasonal\_War
 + 260\_Il\_Gioco\_dellX
++ 10004\_Bicoloring
 
 ### BFS
 + 532\_Dungeon\_Master
