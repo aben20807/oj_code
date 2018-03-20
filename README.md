@@ -44,3 +44,6 @@ Practice in Online Judge
 
 ### Big number
 + 10106\_Product
+
+### Binary search
++ 10474\_Where\_is\_the\_Marble
