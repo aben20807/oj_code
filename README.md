@@ -32,6 +32,7 @@ Practice in Online Judge
 + 439\_Knight\_Moves
 + 383\_Shipping\_Routes
 + 567\_Risk
++ 762\_We\_Ship\_Cheap
 
 ### Prime factor
 + 10392\_Factoring\_Large\_Numbers
