@@ -51,3 +51,6 @@ Practice in Online Judge
 
 ### Backtracking
 + 441\_Lotto
+
+### DP
++ 674\_Coin\_Change
