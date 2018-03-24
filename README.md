@@ -38,6 +38,7 @@ Practice in Online Judge
 
 ### Prime factor
 + 10392\_Factoring\_Large\_Numbers
++ 294\_Divisors
 
 ### GCD
 + 408\_Uniform\_Generator
