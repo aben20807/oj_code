@@ -37,6 +37,9 @@ Practice in Online Judge
 + 567\_Risk
 + 762\_We\_Ship\_Cheap
 
+### Prime
++ 406\_Prime\_Cuts
+
 ### Prime factor
 + 10392\_Factoring\_Large\_Numbers
 + 294\_Divisors
