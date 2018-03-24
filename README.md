@@ -21,6 +21,7 @@ Practice in Online Judge
 
 ### STL
 + 10420\_List\_of\_Conquests: Map
++ 136\_Ugly\_Numbers: Vector
 
 ### DFS
 + 539\_The\_Settlers\_of\_Catan
