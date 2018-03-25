@@ -52,6 +52,9 @@ Practice in Online Judge
 ### Big number
 + 10106\_Product
 
+### Floating point
++ 906\_Rational\_Neighbor
+
 ### Binary search
 + 10474\_Where\_is\_the\_Marble
 
