@@ -57,6 +57,7 @@ Practice in Online Judge
 
 ### Binary search
 + 10474\_Where\_is\_the\_Marble
++ 10341\_Solve\_It
 
 ### Backtracking
 + 441\_Lotto
