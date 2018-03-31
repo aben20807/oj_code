@@ -1,5 +1,6 @@
 Practice in Online Judge
 ===
++ [x]: have comments.
 
 ## Uva
 ### Basic
@@ -61,6 +62,7 @@ Practice in Online Judge
 
 ### Backtracking
 + 441\_Lotto
++ [x] 167\_The\_Sultans\_Successors
 
 ### DP
 + 674\_Coin\_Change
