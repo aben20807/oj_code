@@ -65,6 +65,7 @@ Practice in Online Judge
 ### Backtracking
 + 441\_Lotto
 + [x] 167\_The\_Sultans\_Successors
++ 291\_The\_House\_Of\_Santa\_Claus
 
 ### DP
 + 674\_Coin\_Change
