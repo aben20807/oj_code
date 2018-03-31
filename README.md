@@ -1,6 +1,6 @@
 Practice in Online Judge
 ===
-+ [x]: have comments.
++ [x] : have comments.
 
 ## Uva
 ### Basic
@@ -11,6 +11,7 @@ Practice in Online Judge
 + 11984\_A\_Change\_in\_Thermal\_Unit
 + 11462\_Age\_Sort
 + 10922\_2\_the\_9s
++ [x] 488\_Triangle\_Wave
 
 ### Sort
 + 10327\_Flip\_Sort: Bubble Sort
