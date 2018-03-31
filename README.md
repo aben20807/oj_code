@@ -12,6 +12,7 @@ Practice in Online Judge
 + 11462\_Age\_Sort
 + 10922\_2\_the\_9s
 + [x] 488\_Triangle\_Wave
++ [x] 10633\_Rare\_Easy\_Problem
 
 ### Sort
 + 10327\_Flip\_Sort: Bubble Sort
