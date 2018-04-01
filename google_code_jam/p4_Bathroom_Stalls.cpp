@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
-#include <queue>
-typedef long long i64;
+#include <map>
+typedef long long ll;
 using namespace std;
 
 int main()
@@ -10,23 +10,24 @@ int main()
     int t, casecnt = 1;
     scanf("%d\n", &t);
     while (t--) {
-        i64 n, k;
+        ll n, k;
         scanf("%lld %lld\n", &n, &k);
         printf("Case #%d: ", casecnt++);
-        queue<i64> q;
-        q.push(n);
-        while (k--) {
-            i64 ttop = q.front();
-            q.pop();
-            i64 r = ttop / 2;
-            i64 l = (ttop - 1) / 2;
-            if (k == 0) {
-                printf("%lld %lld\n", r, l);
-                break;
-            }
-            q.push(r);
-            q.push(l);
+        map<ll, ll> q;
+        q[n] = 1;
+        ll r, l;
+        while (k > 0) {
+            auto it = prev(q.end());
+            ll ttop = it->first;
+            ll cnt = it->second;
+            q.erase(it);
+            r = ttop / 2;
+            l = (ttop - 1) / 2;
+            q[r] += cnt;
+            q[l] += cnt;
+            k -= cnt;
         }
+        printf("%lld %lld\n", r, l);
     }
     return 0;
 }
