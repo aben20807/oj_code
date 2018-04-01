@@ -4,4 +4,5 @@
 *.out
 *.swp
 *.exe
+*.py
 .gdb_history
