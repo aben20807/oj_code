@@ -40,29 +40,6 @@ bool can_take(int x, int y)
     return true;
 }
 
-bool can_take(int x)
-{
-    double tmpv[26];
-    for (int i = 0; i < n; i++) {
-        tmpv[i] = v[i];
-    }
-    for (int i = 0; i < n; i++) {
-        if (i == x) {
-            tmpv[i] -= (double)1 / sum;
-        } else {
-            tmpv[i] += (double)1 / sum;
-            if (tmpv[i] > 0.5) {
-                return false;
-            }
-        }
-    }
-    for (int i = 0; i < n; i++) {
-        v[i] = tmpv[i];
-    }
-    sum -= 1;
-    return true;
-}
-
 int main()
 {
     int t, casecnt = 1;
@@ -75,28 +52,22 @@ int main()
             scanf("%d", &p[i]);
             sum += p[i];
         }
-        // printf("b\n");
         for (int i = 0; i < n; i++) {
-            // printf("%d ", p[i]);
             v[i] = (double)p[i] / sum;
-            // printf("%lf ", v[i]);
         }
-        // printf("%d\n", sum);
         printf("Case #%d:", casecnt++);
         while (sum > 0 && sum != 3) {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     if (can_take(i, j)) {
-                        // printf("%d %d %d\n", i, j, sum);
                         printf(" %c%c", 'A' + i, 'A' + j);
-                    } else {
-                        // printf("n - %d %d %d\n", i, j, sum);
                     }
                 }
             }
         }
-        while (sum > 0) {
-            for (int i = 0; i < n; i++) {
+        if (sum == 3) {
+            int i;
+            for (i = 0; i < n; i++) {
                 if (p[i] > 0) {
                     printf(" %c", 'A' + i);
                     p[i]--;
@@ -104,7 +75,7 @@ int main()
                     break;
                 }
             }
-            for (int i = 0; i < n; i++) {
+            for (; i < n; i++) {
                 if (p[i] > 0) {
                     printf(" %c", 'A' + i);
                     p[i]--;
@@ -112,7 +83,7 @@ int main()
                     break;
                 }
             }
-            for (int i = 0; i < n; i++) {
+            for (; i < n; i++) {
                 if (p[i] > 0) {
                     printf("%c", 'A' + i);
                     p[i]--;
@@ -122,10 +93,5 @@ int main()
             }
         }
         printf("\n");
-        // printf("\na\n");
-        for (int i = 0; i < n; i++) {
-            // printf("%d ", p[i]);
-        }
-        // printf("%d\n", sum);
     }
 }
