@@ -82,7 +82,7 @@ int main()
             // printf("%lf ", v[i]);
         }
         // printf("%d\n", sum);
-        printf("Case #%d", casecnt++);
+        printf("Case #%d:", casecnt++);
         while (sum > 0 && sum != 3) {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
@@ -92,6 +92,32 @@ int main()
                     } else {
                         // printf("n - %d %d %d\n", i, j, sum);
                     }
+                }
+            }
+        }
+        while (sum > 0) {
+            for (int i = 0; i < n; i++) {
+                if (p[i] > 0) {
+                    printf(" %c", 'A' + i);
+                    p[i]--;
+                    sum--;
+                    break;
+                }
+            }
+            for (int i = 0; i < n; i++) {
+                if (p[i] > 0) {
+                    printf(" %c", 'A' + i);
+                    p[i]--;
+                    sum--;
+                    break;
+                }
+            }
+            for (int i = 0; i < n; i++) {
+                if (p[i] > 0) {
+                    printf("%c", 'A' + i);
+                    p[i]--;
+                    sum--;
+                    break;
                 }
             }
         }
