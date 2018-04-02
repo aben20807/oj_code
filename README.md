@@ -67,6 +67,7 @@ Practice in Online Judge
 + [x] 167\_The\_Sultans\_Successors
 + 291\_The\_House\_Of\_Santa\_Claus
 + [x] 524\_Prime\_Ring\_Problem
++ 574\_Sum\_It\_Up
 
 ### DP
 + 674\_Coin\_Change
