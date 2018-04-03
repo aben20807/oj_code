@@ -69,6 +69,7 @@ Practice in Online Judge
 + [x] 524\_Prime\_Ring\_Problem
 + 574\_Sum\_It\_Up
 + 624\_CD
++ [x] 750\_8\_Queens\_Chess\_Problem
 
 ### DP
 + 674\_Coin\_Change
