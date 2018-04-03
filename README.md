@@ -68,6 +68,7 @@ Practice in Online Judge
 + 291\_The\_House\_Of\_Santa\_Claus
 + [x] 524\_Prime\_Ring\_Problem
 + 574\_Sum\_It\_Up
++ 624\_CD
 
 ### DP
 + 674\_Coin\_Change
