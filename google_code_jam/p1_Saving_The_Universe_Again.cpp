@@ -4,6 +4,8 @@
 #include <algorithm>
 using namespace std;
 
+int snum;
+
 long long countdamage(string p)
 {
     long long beam = 1;
@@ -15,6 +17,7 @@ long long countdamage(string p)
             break;
         case 'S':
             sum += beam;
+            snum++;
             break;
         }
     }
@@ -27,6 +30,7 @@ int main()
     int casecnt = 1;
     scanf("%d", &t);
     while (t--) {
+        snum = 0;
         long long d;
         scanf("%lld", &d);
         string p;
@@ -36,7 +40,9 @@ int main()
         long long sum = countdamage(p);
         // printf("%lld\n", sum);
         printf("Case #%d: ", casecnt++);
-        if (sum <= d) {
+        if (snum > d) {
+            printf("IMPOSSIBLE\n");
+        } else if (sum <= d) {
             printf("%d\n", 0);
         } else {
             long long hack = 0;
