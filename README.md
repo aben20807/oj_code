@@ -78,3 +78,4 @@ Practice in Online Judge
 
 ### LCS
 + [x] 531\_Compromise
++ 111\_History\_Grading
