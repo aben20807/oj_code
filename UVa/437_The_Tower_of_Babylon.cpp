@@ -1,3 +1,7 @@
+// 輸入的每個磚塊都有六種的可能要比較，所以每讀x,y,z就把所有排列都列出來
+// 接著從大到小排序後再去跑LDS
+// 發現在cmp()裡面使用 >= 會出現上次迴圈中vector的東西，頗怪
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -10,12 +14,13 @@ struct block {
     int y;
     int z;
 };
+vector<struct block> b;
 
 bool cmp(struct block b1, struct block b2)
 {
     if (b1.x == b2.x)
-        return b1.y >= b2.y;
-    return b1.x >= b2.x;
+        return b1.y > b2.y; // BUG: >=
+    return b1.x > b2.x;     // BUG: >=
 }
 
 int lds(vector<struct block> &b)
@@ -23,50 +28,31 @@ int lds(vector<struct block> &b)
     if (b.size() == 0)
         return 0;
     int dp[b.size()];
-    int dppath[b.size()];
+    int mmax = 0;
     for (int i = 0; i < (int)b.size(); i++) {
         dp[i] = b[i].z;
-        dppath[i] = -1;
+        if (mmax < dp[i]) {
+            mmax = dp[i];
+        }
     }
-    for (int i : dp) {
-        printf("%3d", i);
-    }
-    printf("\n");
     for (int i = 0; i < (int)b.size(); i++) {
         for (int j = i + 1; j < (int)b.size(); j++) {
             if (b[j].x < b[i].x && b[j].y < b[i].y && dp[i] + b[j].z > dp[j]) {
                 dp[j] = dp[i] + b[j].z;
-                dppath[j] = i;
+                if (mmax < dp[j]) {
+                    mmax = dp[j];
+                }
             }
         }
     }
-    for (int i : dp) {
-        printf("%4d", i);
-    }
-    printf("\n");
-    for (int i : dppath) {
-        // printf("%3d", i);
-    }
-    printf("\n");
-    int mmax = 0, pos = 0;
-    for (int i = 0; i < (int)b.size(); i++) {
-        if (mmax < dp[i]) {
-            mmax = dp[i];
-            pos = i;
-        }
-    }
-    for (int i = pos; i != -1; i = dppath[i]) {
-        // printf("%d ", b[i].z);
-    }
-    // printf("\n");
-    return 0;
+    return mmax;
 }
 
 int main()
 {
-    int n;
+    int n, casecnt = 1;
     while (scanf("%d", &n) && n) {
-        vector<struct block> b;
+        b.clear();
         for (int i = 0; i < n; i++) {
             int x, y, z;
             scanf("%d%d%d", &x, &y, &z);
@@ -78,10 +64,10 @@ int main()
             b.push_back({z, y, x});
         }
         sort(b.begin(), b.end(), cmp);
-        for (int i = 0; i < (int)b.size(); i++) {
-            // printf("%d %d %d\n", b[i].x, b[i].y, b[i].z);
-        }
-        lds(b);
+        // for (auto b:b){ // BUG: use >= in cmp()
+        //     printf("%d %d %d\n", b.x, b.y, b.z);
+        // }
+        printf("Case %d: maximum height = %d\n", casecnt++, lds(b));
     }
     return 0;
 }
