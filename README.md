@@ -83,3 +83,4 @@ Practice in Online Judge
 ### LIS(LDS)
 + [x] 231\_Testing\_the\_CATCHER
 + [x] 437\_The\_Tower\_of\_Babylon
++ [x] 481\_What\_Goes\_Up
