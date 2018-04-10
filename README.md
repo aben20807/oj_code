@@ -82,6 +82,7 @@ Practice in Online Judge
 + [x] 10066\_The\_Twin\_Towers
 + [x] 10100\_Longest\_Match
 + [x] 10192\_Vacation
++ [x] 10252\_Common\_Permutation: sort
 
 ### LIS(LDS)
 + [x] 231\_Testing\_the\_CATCHER
