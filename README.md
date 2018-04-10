@@ -80,6 +80,7 @@ Practice in Online Judge
 + [x] 531\_Compromise
 + [x] 111\_History\_Grading
 + [x] 10066\_The\_Twin\_Towers
++ [x] 10100\_Longest\_Match
 
 ### LIS(LDS)
 + [x] 231\_Testing\_the\_CATCHER
