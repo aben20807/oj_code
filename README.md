@@ -81,6 +81,7 @@ Practice in Online Judge
 + [x] 111\_History\_Grading
 + [x] 10066\_The\_Twin\_Towers
 + [x] 10100\_Longest\_Match
++ [x] 10192\_Vacation
 
 ### LIS(LDS)
 + [x] 231\_Testing\_the\_CATCHER
