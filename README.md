@@ -83,6 +83,7 @@ Practice in Online Judge
 + [x] 10100\_Longest\_Match
 + [x] 10192\_Vacation
 + [x] 10252\_Common\_Permutation: sort
++ [x] 10405\_Longest\_Common\_Subsequence
 
 ### LIS(LDS)
 + [x] 231\_Testing\_the\_CATCHER
