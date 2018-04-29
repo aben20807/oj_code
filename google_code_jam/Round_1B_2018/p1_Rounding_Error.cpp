@@ -29,25 +29,18 @@ int main()
         if (100 % n == 0) {
             printf("100\n");
         } else {
-            double gape = round(100 / (double)n);
-            // printf("%lf\n", gape);
-            double sum2 = sum;
-            if (gape * n > 100) {
-                for (int i = 0; i < n - respeo; i++) {
-                    sum2 += gape;
-                }
-            }
             for (int i = 1; i <= l && respeo < n; i++) {
                 for (int j = 1; j <= n - respeo; j++) {
                     if (round((double)(j + p[i]) / (double)n) > (j + p[i]) / n) {
-                        sum -= (round(100 * (double)p[i] / (double)n));
-                        sum += (round(100 * (double)(j + p[i]) / (double)n));
+                        sum -= (round(100.0 * (double)p[i] / (double)n));
+                        sum += (round(100.0 * (double)(j + p[i]) / (double)n));
                         respeo += j;
                     }
                 }
             }
+            double gape = round(100.0 / (double)n);
             sum += (gape * (n - respeo));
-            printf("%d\n", (sum > sum2) ? (int)sum : (int)sum2);
+            printf("%d\n", (int)sum);
         }
     }
     return 0;
