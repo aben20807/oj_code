@@ -35,6 +35,7 @@ int main()
                         sum -= (round(100.0 * (double)p[i] / (double)n));
                         sum += (round(100.0 * (double)(j + p[i]) / (double)n));
                         respeo += j;
+                        break;
                     }
                 }
             }
