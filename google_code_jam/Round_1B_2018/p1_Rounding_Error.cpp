@@ -36,18 +36,10 @@ int main()
                 for (int i = 0; i < n - respeo; i++) {
                     sum2 += gape;
                 }
-            } //else {
-            // int needp = 0;
-            // for (int i = 1; i < n; i++){
-            //     if (round((double)i/(double)n) > i/n){
-            //         needp = i;
-            //         break;
-            //     }
-            // }
+            }
             for (int i = 1; i <= l && respeo < n; i++) {
-                for (int j = 1; j < n - respeo; j++) {
-                    if (round((double)(j + p[i]) / (double)n) > (j + p[i]) / n &&
-                        n - respeo >= j) {
+                for (int j = 1; j <= n - respeo; j++) {
+                    if (round((double)(j + p[i]) / (double)n) > (j + p[i]) / n) {
                         sum -= (round(100 * (double)p[i] / (double)n));
                         sum += (round(100 * (double)(j + p[i]) / (double)n));
                         respeo += j;
@@ -55,7 +47,6 @@ int main()
                 }
             }
             sum += (gape * (n - respeo));
-            // }
             printf("%d\n", (sum > sum2) ? (int)sum : (int)sum2);
         }
     }
