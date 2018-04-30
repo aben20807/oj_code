@@ -96,6 +96,7 @@ Practice in Online Judge
 + 341\_Non-Stop\_Travel: Bellman-Ford
 + [x] 558\_Wormholes: Bellman-Ford
 + [x] 10000\_Longest\_Paths: Bellman-Ford
++ [x] 10048\_Audiophobia: Floyd
 
 ### Articulation
 + 315\_Network
