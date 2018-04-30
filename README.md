@@ -95,6 +95,7 @@ Practice in Online Judge
 ### Shortest Path
 + 341\_Non-Stop\_Travel: Bellman-Ford
 + 558\_Wormholes: Bellman-Ford
++ [x] 10000\_Longest\_Paths: Bellman-Ford
 
 ### Articulation
 + 315\_Network
