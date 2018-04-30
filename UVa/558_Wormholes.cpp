@@ -1,3 +1,6 @@
+// 用 Bellman Ford 找完最短路徑後
+// 再 relax 若還有改變(還有更短的路徑)代表有負環產生
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
