@@ -98,6 +98,7 @@ Practice in Online Judge
 + [x] 10000\_Longest\_Paths: Bellman-Ford
 + [x] 10048\_Audiophobia: Floyd
 + 10278\_Fire\_Station: Floyd
++ 10986\_Sending\_email: SPFA
 
 ### Articulation
 + 315\_Network
