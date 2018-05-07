@@ -105,6 +105,7 @@ Practice in Online Judge
 
 ### SCC
 + 11838\_Come\_and\_Go
++ 247\_Calling\_Circles
 
 ### MST
 + 10034\_Freckles: Kruskal
