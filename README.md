@@ -100,10 +100,11 @@ Practice in Online Judge
 + 10278\_Fire\_Station: Floyd
 + 10986\_Sending\_email: SPFA
 
-### Articulation
+### Articulation (Cut Vertex)
 + 315\_Network
++ 10199\_Tourist\_Guide
 
-### SCC
+### SCC (Tarjan)
 + 11838\_Come\_and\_Go
 + 247\_Calling\_Circles
 + 459\_Graph\_Connectivity
