@@ -102,12 +102,13 @@ Practice in Online Judge
 
 ### Articulation (Cut Vertex)
 + 315\_Network
-+ 10199\_Tourist\_Guide
++ [x] 10199\_Tourist\_Guide
 
 ### SCC (Tarjan)
 + 11838\_Come\_and\_Go
 + 247\_Calling\_Circles
 + 459\_Graph\_Connectivity
++ [x] 11709\_Trust\_groups
 
 ### MST
 + 10034\_Freckles: Kruskal
