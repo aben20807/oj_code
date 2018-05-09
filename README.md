@@ -112,3 +112,6 @@ Practice in Online Judge
 
 ### MST
 + 10034\_Freckles: Kruskal
+
+### KMP (Knuth-Morris-Pratt)
++  455\_Periodic\_Strings
