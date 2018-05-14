@@ -112,7 +112,8 @@ Practice in Online Judge
 
 ### MST
 + 10034\_Freckles: Kruskal
-+ 10397\_Connect\_the\_Campus: Kruskal
++ [x] 10397\_Connect\_the\_Campus: Kruskal
++ [x] 10147\_Highways: Kruskal
 
 ### KMP (Knuth-Morris-Pratt)
 +  455\_Periodic\_Strings
