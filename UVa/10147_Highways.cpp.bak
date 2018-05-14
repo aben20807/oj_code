@@ -1,0 +1,105 @@
+// 讀取 n 個點的 x, y 座標
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct point {
+    double x;
+    double y;
+} p[800];
+
+struct edge {
+    int a;
+    int b;
+    double len;
+} e[800 * 800];
+
+int sset[800];
+int edgenum;
+// vector<struct point> p;
+// vector<struct edge> e;
+
+bool cmp(edge A, edge B)
+{
+    return A.len < B.len;
+}
+
+int Find_Root(int x)
+{
+    if (x == sset[x])
+        return x;
+    return sset[x] = Find_Root(sset[x]);
+}
+
+bool Union(edge A)
+{
+    int x = Find_Root(A.a);
+    int y = Find_Root(A.b);
+    if (x != y) {
+        sset[x] = y;
+        return true;
+    }
+    return false;
+}
+
+int main()
+{
+    int t;
+    scanf("%d", &t);
+    while (t--) {
+        // p.clear();
+        // e.clear();
+        edgenum = 0;
+        int n, m;
+        scanf("%d", &n);
+        for (int i = 1; i <= n; i++) {
+            double x, y;
+            scanf("%lf%lf", &x, &y);
+            p[i].x = x;
+            p[i].y = y;
+            // p.push_back({x, y});
+        }
+        /* connect all points */
+        for (int i = 1; i <= n - 1; i++) {
+            for (int j = i + 1; j <= n; j++) {
+                double len =
+                    sqrt((p[i].x - p[j].x) * (p[i].x - p[j].x) +
+                         (p[i].y - p[j].y) * (p[i].y - p[j].y));
+                // e.push_back({i + 1, j + 1, len});
+                e[edgenum++] = {i, j, len};
+            }
+        }
+        /* init */
+        for (int i = 1; i <= n; i++) {
+            sset[i] = i;
+        }
+        /* existing highways */
+        int edgesum = 0;
+        scanf("%d", &m);
+        edgesum += m;
+        for (int i = 0; i < m; i++) {
+            int x, y;
+            scanf("%d%d", &x, &y);
+            Union({x, y});
+        }
+        /* Kruskal */
+        sort(e, e + edgenum, cmp);
+        // sort(e.begin(), e.end(), cmp);
+        for (int i = 0; edgesum != n - 1; i++) {
+            if (Union(e[i])) {
+                printf("%d %d\n", e[i].a, e[i].b);
+                edgesum++;
+            }
+        }
+        if (edgesum == m) {
+            printf("No new highways need\n");
+        }
+        if (t)
+            printf("\n");
+    }
+    return 0;
+}
