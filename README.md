@@ -116,6 +116,7 @@ Practice in Online Judge
 + [x] 10147\_Highways: Kruskal
 + [x] 10600\_ACM\_contest\_and\_Blackout: Kruskal
 + [x] 10842\_Traffic\_Flow: Kruskal, MaxST
++ [x] 908\_Re-connecting\_Computer\_Sites: Kruskal
 
 ### KMP (Knuth-Morris-Pratt)
 +  455\_Periodic\_Strings
