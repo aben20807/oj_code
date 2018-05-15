@@ -119,6 +119,7 @@ Practice in Online Judge
 + [x] 10842\_Traffic\_Flow: Kruskal, MaxST
 + [x] 908\_Re-connecting\_Computer\_Sites: Kruskal
 + [x] 11710\_Expensive\_subway: Kruskal
++ [x] 10369\_Arctic\_Network: Kruskal
 
 ### KMP (Knuth-Morris-Pratt)
 +  455\_Periodic\_Strings
