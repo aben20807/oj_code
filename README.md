@@ -78,6 +78,7 @@ Practice in Online Judge
 + 990\_Diving\_for\_gold
 + 10819\_Trouble\_of\_13-Dots
 + 10306\_e-Coins: 2D
++ 108\_Maximum\_Sum: 2D
 
 ### LCS
 + [x] 531\_Compromise
