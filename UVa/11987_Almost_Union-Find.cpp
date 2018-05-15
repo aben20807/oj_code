@@ -1,3 +1,6 @@
+// 因為要移動可能會動到 root，一個一個移會 TLE
+// 初始化把 root 指向 i+n 就變成一般並查集了
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -5,65 +8,65 @@
 #include <vector>
 using namespace std;
 
-vector<vector<int>> myset;
-map<int, int> root;
+int sset[200020];
+int sum[200020];
+int num[200020];
 
-void myunion(int x, int y)
+int Find(int x)
 {
-    int X = root[x];
-    int Y = root[y];
-    if (myset[X].size() > myset[Y].size()) {
-        for (int n : myset[Y]) {
-            myset[X].push_back(n);
-            root[n] = X;
-        }
-        myset[Y].clear();
-    } else {
-        for (int n : myset[X]) {
-            myset[Y].push_back(n);
-            root[n] = Y;
-        }
-        myset[X].clear();
+    if (x == sset[x])
+        return x;
+    return sset[x] = Find(sset[x]);
+}
+
+bool Union(int x, int y)
+{
+    int X = Find(x);
+    int Y = Find(y);
+    if (X != Y) {
+        sset[X] = Y;
+        sum[Y] += sum[X];
+        num[Y] += num[X];
+        return true;
     }
+    return false;
 }
 
 int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) != EOF) {
-        myset.clear();
-        root.clear();
-        for (int i = 0; i <= n; i++) {
-            root[i] = i;
-            vector<int> tmp;
-            tmp.push_back(i);
-            myset.push_back(tmp);
+        /* init */
+        for (int i = 1; i <= n; i++) {
+            sset[i] = i + n;
+            sset[i + n] = i + n;
+            sum[i + n] = i;
+            num[i + n] = 1;
         }
+        /* input command */
         while (m--) {
             int command, p, q;
             scanf("%d", &command);
             if (command == 1) {
                 scanf("%d%d", &p, &q);
-                if (root[p] != root[q]) {
-                    myunion(p, q);
+                if (Find(p) != Find(q)) {
+                    Union(p, q);
                 }
             } else if (command == 2) {
                 scanf("%d%d", &p, &q);
-                if (root[p] != root[q]) {
-                    auto iter = myset[root[p]].begin();
-                    while (*iter != p) ++iter;
-                    myset[root[p]].erase(iter);
-                    myset[root[q]].push_back(p);
-                    root[p] = root[q];
+                int x = Find(p);
+                int y = Find(q);
+                if (x != y) {
+                    sset[p] = y;
+                    sum[x] -= p;
+                    sum[y] += p;
+                    num[x]--;
+                    num[y]++;
                 }
             } else {
                 scanf("%d", &p);
-                int cnt = 0, sum = 0;
-                for (int i = 0; i < (int)myset[root[p]].size(); i++) {
-                    cnt++;
-                    sum += myset[root[p]][i];
-                }
-                printf("%d %d\n", cnt, sum);
+                int x = Find(p);
+                printf("%d %d\n", num[x], sum[x]);
             }
         }
     }
