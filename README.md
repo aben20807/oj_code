@@ -126,3 +126,4 @@ Practice in Online Judge
 ### KMP (Knuth-Morris-Pratt)
 + 455\_Periodic\_Strings
 + [x] 10298\_Power\_Strings
++ [x] 11475\_Extend\_to\_Palindromes
