@@ -28,6 +28,7 @@ Practice in Online Judge
 + 10420\_List\_of\_Conquests: Map
 + 136\_Ugly\_Numbers: Vector
 + [x] 902\_Password\_Search: Map
++ [x] 10226\_Hardwood\_Species: Map
 
 ### DFS
 + 539\_The\_Settlers\_of\_Catan
