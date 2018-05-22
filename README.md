@@ -124,4 +124,5 @@ Practice in Online Judge
 + [x] 10369\_Arctic\_Network: Kruskal
 
 ### KMP (Knuth-Morris-Pratt)
-+  455\_Periodic\_Strings
++ 455\_Periodic\_Strings
++ [x] 10298\_Power\_Strings
