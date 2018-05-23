@@ -131,3 +131,6 @@ Practice in Online Judge
 + 455\_Periodic\_Strings
 + [x] 10298\_Power\_Strings
 + [x] 11475\_Extend\_to\_Palindromes
+
+### Maximum Flow
++ [x] 820\_Internet\_Bandwidth
