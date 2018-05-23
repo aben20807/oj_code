@@ -13,6 +13,7 @@ Practice in Online Judge
 + 10922\_2\_the\_9s
 + [x] 488\_Triangle\_Wave
 + [x] 10633\_Rare\_Easy\_Problem
++ [x] 10679\_I\_Love\_Strings: try to use Aho-Corasick Automaton
 
 ### Sort
 + 10327\_Flip\_Sort: Bubble Sort
