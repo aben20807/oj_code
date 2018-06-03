@@ -134,3 +134,4 @@ Practice in Online Judge
 
 ### Maximum Flow
 + [x] 820\_Internet\_Bandwidth
++ [x] 10330\_Power\_Transmission
