@@ -133,6 +133,7 @@ Practice in Online Judge
 + [x] 11475\_Extend\_to\_Palindromes
 
 ### Maximum Flow
-+ [x] 820\_Internet\_Bandwidth
-+ [x] 10330\_Power\_Transmission
-+ 10779\_Collectors\_Problem
++ [x] 820\_Internet\_Bandwidth: Ford Fulkerson
++ [x] 10330\_Power\_Transmission: Ford Fulkerson
++ 10779\_Collectors\_Problem: Ford Fulkerson
++ 11418\_Clever\_Naming\_Patterns: Edmonds Karp
