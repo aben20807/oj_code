@@ -140,3 +140,6 @@ Practice in Online Judge
 
 ### Segment Tree
 + (POJ)3264\_Balanced\_Lineup
+
+### Binary Indexed Tree
++ 2352\_Stars
