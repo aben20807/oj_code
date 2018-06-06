@@ -142,4 +142,4 @@ Practice in Online Judge
 + (POJ)3264\_Balanced\_Lineup
 
 ### Binary Indexed Tree
-+ 2352\_Stars
++ (POJ)2352\_Stars
