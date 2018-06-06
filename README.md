@@ -137,3 +137,6 @@ Practice in Online Judge
 + [x] 10330\_Power\_Transmission: Ford Fulkerson
 + 10779\_Collectors\_Problem: Ford Fulkerson
 + 11418\_Clever\_Naming\_Patterns: Edmonds Karp
+
+### Segment Tree
++ (POJ)3264\_Balanced\_Lineup
