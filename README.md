@@ -141,6 +141,7 @@ Practice in Online Judge
 ### Bipartite Matching(Augmenting Path)
 + [x] 10080\_Gopher\_II
 + [x] \(POJ)2536\_Gopher\_II
++ [x] 259\_Software\_Allocation
 
 ### Segment Tree
 + (POJ)3264\_Balanced\_Lineup
