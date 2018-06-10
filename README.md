@@ -142,6 +142,8 @@ Practice in Online Judge
 + [x] 10080\_Gopher\_II
 + [x] \(POJ)2536\_Gopher\_II
 + [x] 259\_Software\_Allocation
++ 663\_Sorting\_Slides
++ 1486\_Sorting\_Slides
 
 ### Segment Tree
 + (POJ)3264\_Balanced\_Lineup
