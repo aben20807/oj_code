@@ -147,6 +147,7 @@ Practice in Online Judge
 + 670\_The\_dog\_task
 + 1325\_Machine\_Schedule
 + (POJ)1194\_Machine\_Schedule
++ 11159\_Factors\_and\_Multiples
 
 ### Segment Tree
 + (POJ)3264\_Balanced\_Lineup
