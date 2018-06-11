@@ -145,6 +145,8 @@ Practice in Online Judge
 + 663\_Sorting\_Slides
 + 1486\_Sorting\_Slides
 + 670\_The\_dog\_task
++ 1325\_Machine\_Schedule
++ (POJ)1194\_Machine\_Schedule
 
 ### Segment Tree
 + (POJ)3264\_Balanced\_Lineup
