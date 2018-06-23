@@ -154,3 +154,4 @@ Practice in Online Judge
 
 ### Binary Indexed Tree
 + (POJ)2352\_Stars
++ (POJ)1195\_Mobile\_phones
