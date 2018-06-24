@@ -154,6 +154,7 @@ Practice in Online Judge
 
 ### Binary Indexed Tree
 + (POJ)2352\_Stars
-+ (POJ)1195\_Mobile\_phones
++ (POJ)1195\_Mobile\_phones: 2D
 + [x] \(POJ)3321\_Apple\_Tree
 + [x] 11423\_Cache\_Simulator
++ (POJ)2155\_Matrix: 2D
