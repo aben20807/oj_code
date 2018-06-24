@@ -156,3 +156,4 @@ Practice in Online Judge
 + (POJ)2352\_Stars
 + (POJ)1195\_Mobile\_phones
 + [x] \(POJ)3321\_Apple\_Tree
++ [x] 11423\_Cache\_Simulator
