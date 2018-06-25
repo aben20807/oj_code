@@ -158,3 +158,4 @@ Practice in Online Judge
 + [x] \(POJ)3321\_Apple\_Tree
 + [x] 11423\_Cache\_Simulator
 + (POJ)2155\_Matrix: 2D
++ (POJ)3067\_Japan
