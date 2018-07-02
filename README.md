@@ -165,3 +165,6 @@ Practice in Online Judge
 ### Line Intersection
 + 191\_Intersection
 + 378\_Intersecting\_Lines
+
+### Convex Hull
++ 218\_Moth\_Eradication
