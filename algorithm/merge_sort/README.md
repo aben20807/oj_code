@@ -35,5 +35,5 @@ MERGE_SORT(A, p, r)
         q = ⌊(p + r)/2⌋
         MERGE_SORT(A, p, q)
         MERGE_SORT(A, q+1, r)
-        MERGE_SORT(A, p, q, r)
+        MERGE(A, p, q, r)
 ```
