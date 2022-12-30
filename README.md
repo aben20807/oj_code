@@ -32,7 +32,8 @@
 
 ### Heap
 
-+ [x] leetcode/1962-remove-stones-to-minimize-the-total.c
++ [x] leetcode/1962-remove-stones-to-minimize-the-total
++ [x] leetcode/1834-single-threaded-cpu: priority queue (C failed, using C++ instead)
 
 ## Sort
 
@@ -74,6 +75,7 @@
 + [x] leetcode/938-range-sum-of-bst
 + [x] leetcode/1026-maximum-difference-between-node-and-ancestor
 + [x] leetcode/1339-maximum-product-of-splitted-binary-tree: double DFS
++ [x] leetcode/797-all-paths-from-source-to-target: all paths
 
 ## BFS
 
